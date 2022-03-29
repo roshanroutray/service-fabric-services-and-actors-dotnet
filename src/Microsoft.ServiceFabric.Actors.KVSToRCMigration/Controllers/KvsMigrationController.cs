@@ -72,7 +72,7 @@ namespace Microsoft.ServiceFabric.Actors.KVSToRCMigration.Controllers
         [HttpPut("StartDowntime")]
         public async Task StartDowntimeAsync(CancellationToken cancellationToken)
         {
-            await this.migrationOrchestrator.StartDowntimeAsync(cancellationToken);
+            await this.MigrationOrchestrator.StartDowntimeAsync(cancellationToken);
         }
 
         /// <summary>
@@ -83,7 +83,7 @@ namespace Microsoft.ServiceFabric.Actors.KVSToRCMigration.Controllers
         [HttpPut("AbortMigration")]
         public async Task AbortMigrationAsync(CancellationToken cancellationToken)
         {
-            await this.migrationOrchestrator.AbortMigrationAsync(cancellationToken);
+            await this.MigrationOrchestrator.AbortMigrationAsync(cancellationToken);
         }
 
         /// <summary>
@@ -94,7 +94,7 @@ namespace Microsoft.ServiceFabric.Actors.KVSToRCMigration.Controllers
         [HttpPut("StartMigration")]
         public async Task StartMigrationAsync(CancellationToken cancellationToken)
         {
-            await this.migrationOrchestrator.StartMigrationAsync(cancellationToken);
+            await this.MigrationOrchestrator.StartMigrationAsync(cancellationToken);
         }
 
         /// <summary>
